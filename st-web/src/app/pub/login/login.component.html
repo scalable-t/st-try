@@ -1,0 +1,3 @@
+<p>{{ loading ? 'logging in...' : 'Login status: ' + authService.isLoggedIn }}</p>
+<a [routerLink]="['/manage/home']">Heroes</a>
+<button (click)="onLogin('asdf', 'fdas')" [disabled]="loading">Login!</button>
