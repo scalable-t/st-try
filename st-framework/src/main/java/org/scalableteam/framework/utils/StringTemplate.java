@@ -142,7 +142,7 @@ public class StringTemplate {
                             state = ParseState.PREFIX;
                         } else {
                             // Continues match suffix
-                            state = ParseState.PREFIX_MORE;
+                            state = ParseState.SUFFIX_MORE;
                             tempMatchCount = 1;
                             tempBuffer.append(c);
                         }
