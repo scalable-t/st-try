@@ -1,0 +1,22 @@
+
+.st-layout-topbar {
+  height: 48px;
+  background-color: #00ccee;
+  box-shadow: 0 0 1px black;
+  display: flex;
+}
+
+.st-layout-main {
+  display: flex;
+  min-height: 100%;
+}
+
+.st-layout-main-left-menu {
+  width: 200px;
+  flex-shrink: 0;
+  background-color: #8b8d8e;
+}
+.st-layout-main-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

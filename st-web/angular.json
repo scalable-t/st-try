@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+=======
+>>>>>>> 11cf9df0a2440ebc8ff4178764bbcec158436da0
               "src/styles.scss"
             ],
             "scripts": []
@@ -93,7 +96,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+=======
+>>>>>>> 11cf9df0a2440ebc8ff4178764bbcec158436da0
               "src/styles.scss"
             ],
             "scripts": []
@@ -125,7 +131,13 @@
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "st-web"
 }
+=======
+    }},
+  "defaultProject": "st-web"
+}
+>>>>>>> 11cf9df0a2440ebc8ff4178764bbcec158436da0
