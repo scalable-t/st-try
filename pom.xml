@@ -4,16 +4,28 @@
 
     <groupId>com.scalable-t</groupId>
     <artifactId>st-parent</artifactId>
-    <version>1.0.0.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <description>This pom only indexes sub modules, no functional using.</description>
-    <modules>
-        <module>st-framework</module>
-        <module>st-account</module>
-    </modules>
+    <description>Parent</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>LATEST</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <properties>
+        <java.version>11</java.version>
+        <project.source.fileEncoding>UTF-8</project.source.fileEncoding>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <downloadSources>true</downloadSources>
         <downloadJavadocs>false</downloadJavadocs>
     </properties>
