@@ -32,3 +32,6 @@ hs_err_pid*
 
 # NodeJS
 node_modules/
+
+# Antora
+build/
