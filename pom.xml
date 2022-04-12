@@ -5,6 +5,10 @@
     <groupId>com.scalable-t</groupId>
     <artifactId>st-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>auto-dml-executor</module>
+        <module>performance</module>
+    </modules>
     <packaging>pom</packaging>
 
     <description>Parent</description>

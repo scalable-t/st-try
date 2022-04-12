@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.st.bench.mybatis.mapper.DemoTableOriginMapper">
+    
+    <sql id="where">
+        <where>
+            <if test="name != null and name != ''"> and name = #{name}</if>
+            <if test="email != null and email != ''"> and email = #{email}</if>
+            <if test="address != null and address != ''"> and address = #{address}</if>
+            <if test="remark != null and remark != ''"> and remark = #{remark}</if>
+            <if test="status != null and status != ''"> and status = #{status}</if>
+            <if test="ageMin != null and ageMin != ''"> and age <![CDATA[ >= ]]> #{ageMin}</if>
+            <if test="ageMax != null and ageMax != ''"> and age <![CDATA[ <= ]]> #{ageMax}</if>
+            <if test="ext1 != null and ext1 != ''"> and ext1 = #{ext1}</if>
+            <if test="ext2 != null and ext2 != ''"> and ext2 = #{ext2}</if>
+            <if test="ext3 != null and ext3 != ''"> and ext3 = #{ext3}</if>
+            <if test="ext4 != null and ext4 != ''"> and ext4 = #{ext4}</if>
+            <if test="ext5 != null and ext5 != ''"> and ext5 = #{ext5}</if>
+            <if test="ext6 != null and ext6 != ''"> and ext6 = #{ext6}</if>
+            <if test="ext7 != null and ext7 != ''"> and ext7 = #{ext7}</if>
+            <if test="ext8 != null and ext8 != ''"> and ext8 = #{ext8}</if>
+            <if test="ext9 != null and ext9 != ''"> and ext9 = #{ext9}</if>
+            <if test="ext10 != null and ext10 != ''"> and ext10 = #{ext10}</if>
+            <if test="ext11 != null and ext11 != ''"> and ext11 = #{ext11}</if>
+            <if test="ext12 != null and ext12 != ''"> and ext12 = #{ext12}</if>
+            <if test="ext13 != null and ext13 != ''"> and ext13 = #{ext13}</if>
+            <if test="ext14 != null and ext14 != ''"> and ext14 = #{ext14}</if>
+            <if test="ext15 != null and ext15 != ''"> and ext15 = #{ext15}</if>
+            <if test="ext16 != null and ext16 != ''"> and ext16 = #{ext16}</if>
+            <if test="ext17 != null and ext17 != ''"> and ext17 = #{ext17}</if>
+            <if test="ext18 != null and ext18 != ''"> and ext18 = #{ext18}</if>
+            <if test="ext19 != null and ext19 != ''"> and ext19 = #{ext19}</if>
+            <if test="ext20 != null and ext20 != ''"> and ext20 = #{ext20}</if>
+            <if test="ext21 != null and ext21 != ''"> and ext21 = #{ext21}</if>
+            <if test="ext22 != null and ext22 != ''"> and ext22 = #{ext22}</if>
+            <if test="ext23 != null and ext23 != ''"> and ext23 = #{ext23}</if>
+            <if test="ext24 != null and ext24 != ''"> and ext24 = #{ext24}</if>
+            <if test="ext25 != null and ext25 != ''"> and ext25 = #{ext25}</if>
+            <if test="ext26 != null and ext26 != ''"> and ext26 = #{ext26}</if>
+            <if test="ext27 != null and ext27 != ''"> and ext27 = #{ext27}</if>
+            <if test="ext28 != null and ext28 != ''"> and ext28 = #{ext28}</if>
+            <if test="ext29 != null and ext29 != ''"> and ext29 = #{ext29}</if>
+            <if test="ext30 != null and ext30 != ''"> and ext30 = #{ext30}</if>
+            <if test="ext31 != null and ext31 != ''"> and ext31 = #{ext31}</if>
+            <if test="ext32 != null and ext32 != ''"> and ext32 = #{ext32}</if>
+            <if test="ext33 != null and ext33 != ''"> and ext33 = #{ext33}</if>
+            <if test="ext34 != null and ext34 != ''"> and ext34 = #{ext34}</if>
+            <if test="ext35 != null and ext35 != ''"> and ext35 = #{ext35}</if>
+            <if test="ext36 != null and ext36 != ''"> and ext36 = #{ext36}</if>
+            <if test="ext37 != null and ext37 != ''"> and ext37 = #{ext37}</if>
+            <if test="ext38 != null and ext38 != ''"> and ext38 = #{ext38}</if>
+            <if test="ext39 != null and ext39 != ''"> and ext39 = #{ext39}</if>
+            <if test="ext40 != null and ext40 != ''"> and ext40 = #{ext40}</if>
+            <if test="ext41 != null and ext41 != ''"> and ext41 = #{ext41}</if>
+            <if test="ext42 != null and ext42 != ''"> and ext42 = #{ext42}</if>
+            <if test="ext43 != null and ext43 != ''"> and ext43 = #{ext43}</if>
+            <if test="ext44 != null and ext44 != ''"> and ext44 = #{ext44}</if>
+            <if test="ext45 != null and ext45 != ''"> and ext45 = #{ext45}</if>
+            <if test="ext46 != null and ext46 != ''"> and ext46 = #{ext46}</if>
+            <if test="ext47 != null and ext47 != ''"> and ext47 = #{ext47}</if>
+            <if test="ext48 != null and ext48 != ''"> and ext48 = #{ext48}</if>
+            <if test="ext49 != null and ext49 != ''"> and ext49 = #{ext49}</if>
+            <if test="ext50 != null and ext50 != ''"> and ext50 = #{ext50}</if>
+        </where>
+    </sql>
+
+    <insert id="insert">
+        insert into demo_table (
+        id, name, email, address,
+        remark, status, age,
+        ext1, ext2, ext3, ext4,
+        ext5, ext6, ext7, ext8,
+        ext9, ext10, ext11, ext12,
+        ext13, ext14, ext15, ext16,
+        ext17, ext18, ext19, ext20,
+        ext21, ext22, ext23, ext24,
+        ext25, ext26, ext27, ext28,
+        ext29, ext30, ext31, ext32,
+        ext33, ext34, ext35, ext36,
+        ext37, ext38, ext39, ext40,
+        ext41, ext42, ext43, ext44,
+        ext45, ext46, ext47, ext48,
+        ext49, ext50, creatorId, updaterId
+        ) values (
+        #{id}, #{name}, #{email}, #{address},
+        #{remark}, #{status}, #{age},
+        #{ext1}, #{ext2}, #{ext3}, #{ext4},
+        #{ext5}, #{ext6}, #{ext7}, #{ext8},
+        #{ext9}, #{ext10}, #{ext11}, #{ext12},
+        #{ext13}, #{ext14}, #{ext15}, #{ext16},
+        #{ext17}, #{ext18}, #{ext19}, #{ext20},
+        #{ext21}, #{ext22}, #{ext23}, #{ext24},
+        #{ext25}, #{ext26}, #{ext27}, #{ext28},
+        #{ext29}, #{ext30}, #{ext31}, #{ext32},
+        #{ext33}, #{ext34}, #{ext35}, #{ext36},
+        #{ext37}, #{ext38}, #{ext39}, #{ext40},
+        #{ext41}, #{ext42}, #{ext43}, #{ext44},
+        #{ext45}, #{ext46}, #{ext47}, #{ext48},
+        #{ext49}, #{ext50}, #{creatorId}, #{updaterId}
+        )
+    </insert>
+
+    <update id="updateById">
+        update demo_table set updateDatetime = #{updateDatetime}
+        <if test="name != null">,name = #{name}</if>
+        <if test="email != null">,email = #{email}</if>
+        <if test="address != null">,address = #{address}</if>
+        <if test="remark != null">,remark = #{remark}</if>
+        <if test="status != null">,status = #{status}</if>
+        <if test="age != null">,age = #{age}</if>
+        <if test="ext1 != null">,ext1 = #{ext1}</if>
+        <if test="ext2 != null">,ext2 = #{ext2}</if>
+        <if test="ext3 != null">,ext3 = #{ext3}</if>
+        <if test="ext4 != null">,ext4 = #{ext4}</if>
+        <if test="ext5 != null">,ext5 = #{ext5}</if>
+        <if test="ext6 != null">,ext6 = #{ext6}</if>
+        <if test="ext7 != null">,ext7 = #{ext7}</if>
+        <if test="ext8 != null">,ext8 = #{ext8}</if>
+        <if test="ext9 != null">,ext9 = #{ext9}</if>
+        <if test="ext10 != null">,ext10 = #{ext10}</if>
+        <if test="ext11 != null">,ext11 = #{ext11}</if>
+        <if test="ext12 != null">,ext12 = #{ext12}</if>
+        <if test="ext13 != null">,ext13 = #{ext13}</if>
+        <if test="ext14 != null">,ext14 = #{ext14}</if>
+        <if test="ext15 != null">,ext15 = #{ext15}</if>
+        <if test="ext16 != null">,ext16 = #{ext16}</if>
+        <if test="ext17 != null">,ext17 = #{ext17}</if>
+        <if test="ext18 != null">,ext18 = #{ext18}</if>
+        <if test="ext19 != null">,ext19 = #{ext19}</if>
+        <if test="ext20 != null">,ext20 = #{ext20}</if>
+        <if test="ext21 != null">,ext21 = #{ext21}</if>
+        <if test="ext22 != null">,ext22 = #{ext22}</if>
+        <if test="ext23 != null">,ext23 = #{ext23}</if>
+        <if test="ext24 != null">,ext24 = #{ext24}</if>
+        <if test="ext25 != null">,ext25 = #{ext25}</if>
+        <if test="ext26 != null">,ext26 = #{ext26}</if>
+        <if test="ext27 != null">,ext27 = #{ext27}</if>
+        <if test="ext28 != null">,ext28 = #{ext28}</if>
+        <if test="ext29 != null">,ext29 = #{ext29}</if>
+        <if test="ext30 != null">,ext30 = #{ext30}</if>
+        <if test="ext31 != null">,ext31 = #{ext31}</if>
+        <if test="ext32 != null">,ext32 = #{ext32}</if>
+        <if test="ext33 != null">,ext33 = #{ext33}</if>
+        <if test="ext34 != null">,ext34 = #{ext34}</if>
+        <if test="ext35 != null">,ext35 = #{ext35}</if>
+        <if test="ext36 != null">,ext36 = #{ext36}</if>
+        <if test="ext37 != null">,ext37 = #{ext37}</if>
+        <if test="ext38 != null">,ext38 = #{ext38}</if>
+        <if test="ext39 != null">,ext39 = #{ext39}</if>
+        <if test="ext40 != null">,ext40 = #{ext40}</if>
+        <if test="ext41 != null">,ext41 = #{ext41}</if>
+        <if test="ext42 != null">,ext42 = #{ext42}</if>
+        <if test="ext43 != null">,ext43 = #{ext43}</if>
+        <if test="ext44 != null">,ext44 = #{ext44}</if>
+        <if test="ext45 != null">,ext45 = #{ext45}</if>
+        <if test="ext46 != null">,ext46 = #{ext46}</if>
+        <if test="ext47 != null">,ext47 = #{ext47}</if>
+        <if test="ext48 != null">,ext48 = #{ext48}</if>
+        <if test="ext49 != null">,ext49 = #{ext49}</if>
+        <if test="ext50 != null">,ext50 = #{ext50}</if>
+        <if test="updaterId != null">,updaterId = #{updaterId}</if>
+        where id = #{id}
+    </update>
+
+    <delete id="truncate">
+        truncate table demo_table
+    </delete>
+
+    <select id="queryList" resultType="com.st.bench.mybatis.po.DemoTable">
+        select
+        id, name, email, address,
+        remark, status, age,
+        ext1, ext2, ext3, ext4,
+        ext5, ext6, ext7, ext8,
+        ext9, ext10, ext11, ext12,
+        ext13, ext14, ext15, ext16,
+        ext17, ext18, ext19, ext20,
+        ext21, ext22, ext23, ext24,
+        ext25, ext26, ext27, ext28,
+        ext29, ext30, ext31, ext32,
+        ext33, ext34, ext35, ext36,
+        ext37, ext38, ext39, ext40,
+        ext41, ext42, ext43, ext44,
+        ext45, ext46, ext47, ext48,
+        ext49, ext50, creatorId, updaterId
+        from demo_table <include refid="where" />
+        limit #{offset}, #{limit}
+    </select>
+
+    <select id="queryCount" resultType="java.lang.Long">
+        select count(*) from demo_table <include refid="where" />
+    </select>
+</mapper>
